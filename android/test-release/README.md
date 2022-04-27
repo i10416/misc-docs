@@ -1,5 +1,6 @@
 ## android の内部テストについて
 
+### 内部トラックの分類
 ||internal test|internal app sharing|firebase app distribution|deploy gate|
 |---|---|---|---|---|
 play console へのアクセス|要|要|不要?|不要|
@@ -16,3 +17,12 @@ play store への初回リリース|要|要|不要|不要|
 　参考
 - https://speakerdeck.com/syarihu/internal-app-sharing-wan-quan-nili-jie-sita
 - https://stackoverflow.com/questions/69140615/when-to-use-internal-app-sharing-vs-internal-testing-google-play
+
+### firebase app distribution を利用したアプリの配布
+
+https://console.firebase.google.com/project/__YOUR_PROJECT_NAME__/settings/integrations/playlink
+
+から、firebase のプロジェクトとplay console を連携する必要がある.
+
+また、内部テスト向けにupしたaabの審査を待つ必要がある.
+
